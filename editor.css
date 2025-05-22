@@ -1,0 +1,64 @@
+/* src\components\editor\editor.css */
+
+/* TIP TAP */
+.ProseMirror blockquote {
+  border-left: 4px solid #e5e7eb;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  color: #4b5563;
+}
+
+.ProseMirror img.ProseMirror-selectednode {
+  outline: 3px solid var(--purple);
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.5);
+}
+
+.ProseMirror a {
+  color: #1e90ff;
+  /* Dodger Blue */
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.ProseMirror a:hover {
+  color: #ff4500;
+  /* OrangeRed */
+  text-decoration: none;
+}
+
+.ProseMirror a:focus {
+  outline: 2px solid #8b5cf6;
+  outline-offset: 2px;
+  background-color: rgba(139, 92, 246, 0.1);
+}
+
+.ProseMirror a.active-link {
+  background-color: #e0f7fa;
+  border-radius: 2px;
+}
+
+.ProseMirror a img {
+  border: 2px solid #1e90ff;
+}
+
+.ProseMirror {
+  padding: 8px;
+  outline: none;
+
+  p {
+    margin: 0 0 1em 0;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  span[style*="color"] {
+    color: inherit;
+  }
+
+  span[style*="font-family"] {
+    font-family: inherit;
+  }
+}
